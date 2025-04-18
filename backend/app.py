@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Simplified CORS setup to allow requests from React frontend
-CORS(app, origins=["http://localhost:5173"], supports_credentials=True)
+CORS(app, origins=["http://localhost:5173", "https://savoursagee.vercel.app"], supports_credentials=True)
 
 # Load environment variables
 load_dotenv()
