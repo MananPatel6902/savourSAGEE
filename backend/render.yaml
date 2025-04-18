@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: savoursage-backend
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    plan: free
+    region: oregon
+    envVars:
+      - key: GOOGLE_API_KEY
+        value: YOUR_KEY_HERE

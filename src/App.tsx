@@ -41,7 +41,7 @@ function App() {
     formData.append('language', selectedLanguage);
     
     try {
-      const result = await fetch("http://localhost:6001/analyze_food", {
+      const result = await fetch("https://savoursagee.onrender.com/analyze_food", {
         method: "POST",
         body: formData
       });
